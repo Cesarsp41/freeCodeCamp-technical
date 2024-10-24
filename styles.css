@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body{
+    font-family: Verdana;
+    background-color: #F2F2F2;
+    margin: 0;
+    
+}
+
+#navbar{
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #DBDBDB;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    padding: 15px 0 0 15px;
+    color: #0D0D0D;
+    z-index: 100;
+    border-right: 1px solid #B1B1B1;
+    overflow: visible;
+}
+
+#navbar header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #0D0D0D;
+}
+
+#navbar a{
+    width: 85%;
+    text-decoration: none;
+    color: #0D0D0D;
+    font-size: 12px;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+#navbar a:hover{
+    color: #F7F7F7;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+#main-doc{
+    position: absolute;
+    top: 0;
+    left: 200px;
+    padding: 20px 40px;
+    width: 80%;
+}
+
+.figure-container{
+    width: 65%;
+    height: 180px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.class-figure{
+    width: 50%;
+    height: 100%;
+    border: 5px solid #A2A267;
+    border-radius: 4px;
+}
+
+.object-figure{
+    width: 50%;
+    height: 100%;
+    border-top: 5px solid #A2A267;
+    border-right: 5px solid #A2A267;
+    border-bottom: 5px solid #A2A267;
+    border-radius: 4px;
+}   
+
+.main-section{
+    padding: 15px 0;
+    border-bottom: 2px solid #898989;
+}
+
+.main-section header{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.main-section p{
+    font-size: 12px;
+}
+
+.main-section ul{
+    font-size: 12px;
+}
+
+code{
+    display: block;
+    line-height: 1.5;
+    width: 45%;
+    margin: 0 0 0 30px;
+    padding: 10px 15px;
+    background-color: #CDCDCD;
+    border-radius: 5px;
+}
+
+@media (max-width: 1050px) {
+    #navbar{
+        width: 100px;
+        overflow: hidden;
+    }
+
+    #navbar a{
+        font-size: 10px;
+    }
+
+    #main-doc{
+        position: absolute;
+        top: 0;
+        left: 100px;
+    }
+}
